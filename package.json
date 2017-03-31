@@ -1,0 +1,18 @@
+{
+  "name": "book-trading-fcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "babel-watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ethan Rose",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-watch": "^2.0.6",
+    "express": "^4.15.2"
+  }
+}
