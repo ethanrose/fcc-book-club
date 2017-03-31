@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 //DB Connections
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URL);
-var User = require('./models/user.js');
+var User = require('./models/User.js');
 
 
 //Body Parsers
