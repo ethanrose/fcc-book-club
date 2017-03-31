@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 export default class App extends Component {
+
   render() {
     return (
       <div>
@@ -13,11 +14,9 @@ export default class App extends Component {
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-              <ul className="nav navbar-nav">
-                <li><Link to="/pending">Pending Trades</Link></li>
-              </ul>
               <ul className="nav navbar-nav navbar-right">
-                <li><Link to="/"><span className="glyphicon glyphicon-cog" /></Link></li>
+                <li><Link to="/newbook"><span className="glyphicon glyphicon-plus" /></Link></li>
+                <li><Link to="/settings"><span className="glyphicon glyphicon-cog" /></Link></li>
                 <li><Link to="/login" activeClassName="active">Login</Link></li>
               </ul>
             </div>
