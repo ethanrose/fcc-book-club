@@ -7,7 +7,8 @@ var userSchema = new Schema({
     password: {type: String, required: true},
     name: String,
     city: String,
-    state: String
+    state: String,
+    books: Array
 });
 userSchema.pre('update', function(next){
     if (this.getUpdate().$set.password) {

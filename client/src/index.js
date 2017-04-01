@@ -6,7 +6,9 @@ import App from './App';
 import Home from './Home';
 import Signup from './Signup';
 import Login from './Login';
+
 import Profile from './Profile';
+import Books from './Books';
 
 import NotFound from './NotFound';
 
@@ -18,7 +20,10 @@ ReactDOM.render(
             <IndexRoute component={Home} />
             <Route path="signup" component={Signup} />
             <Route path="login" component={Login} />
+
             <Route path="profile" component={Profile} />
+            <Route path="books" component={Books} />
+            
             <Route path="*" component={NotFound} />
         </Route>
 
